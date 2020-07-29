@@ -2,7 +2,8 @@
 </p>
 
 # Project Title
-
+ Traffic sign classification
+ 
 > <Subtitle>
 > Include project description here.
 
@@ -15,7 +16,7 @@
 
 ## Features
 - Insert list of features here
-
+It gives the name of the input sign image.
 
 
 
@@ -23,7 +24,7 @@
 <img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
 
 ## Instructions to run
-
+in the last_path add the path of input image and run the code
 ```
 $ git clone https://github.com/CodeChefVIT/<Project>
 $ cd <Project>
