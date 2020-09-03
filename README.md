@@ -20,10 +20,13 @@
 
 
 ## Screenshots
-/Users/karanrochlani/Desktop/Traffic-Sign-Classification/Screenshot 2020-07-29 at 8.24.24 PM.png
-/Users/karanrochlani/Desktop/Traffic-Sign-Classification/Screenshot 2020-07-29 at 8.25.05 PM.png
-/Users/karanrochlani/Desktop/Traffic-Sign-Classification/Screenshot 2020-07-29 at 8.25.11 PM.png
-/Users/karanrochlani/Desktop/Traffic-Sign-Classification/Screenshot 2020-08-27 at 5.47.47 PM.png
+<img width="1440" alt="Screenshot 2020-07-29 at 8 24 24 PM" src="https://user-images.githubusercontent.com/58788217/92123770-9a174c80-ee1a-11ea-8260-033ecb83facb.png">
+
+<img width="500" alt="Screenshot 2020-07-29 at 8 25 05 PM" src="https://user-images.githubusercontent.com/58788217/92123957-ce8b0880-ee1a-11ea-924b-e6352d98df5e.png">
+
+<img width="500" alt="Screenshot 2020-07-29 at 8 25 11 PM" src="https://user-images.githubusercontent.com/58788217/92123988-db0f6100-ee1a-11ea-946c-98d475f929aa.png">
+
+<img width="800" alt="Screenshot 2020-08-27 at 5 47 47 PM" src="https://user-images.githubusercontent.com/58788217/92124019-e498c900-ee1a-11ea-9eb0-916bd75dea3b.png">
 
 
 ## Instructions to run
@@ -37,7 +40,6 @@ $ python3 manage.py runserver
 
 ## Contributors
 - <a href="https://github.com/<Contributor>">Karan Rochlani</a>
--
 
 ## License
 
