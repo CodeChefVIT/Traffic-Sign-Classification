@@ -8,12 +8,13 @@ from PIL import Image
 import os
 import numpy as np
 
+curr_path = os.getcwd()
 set1=[]
 number=[]
 """collecting the input to train"""
 for i in range(0,43):
     s=str(i)
-    cur_path=os.path.join('/Users/karanrochlani/Desktop/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Train',s)
+    cur_path=os.path.join(curr_path,'/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Train',s)
     images = os.listdir(cur_path)
     for a in images:
             try:
@@ -94,14 +95,14 @@ plt.show()
 """testing the model"""
 import pandas as pd
 set2=[]
-y_path=pd.read_csv('/Users/karanrochlani/Desktop/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Test.csv')
+y_path=pd.read_csv(os.path.join(curr_path,'/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Test.csv'))
 
 labels=y_path["ClassId"].values
 
 imgs=y_path["Path"].values
 
 for a in imgs:
-    path=os.path.join('/Users/karanrochlani/Desktop/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Test',a)
+    path=os.path.join(curr_path,'/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Test',a)
     try:
         image = Image.open(path)
         image = image.resize((30,30))
@@ -120,7 +121,7 @@ print(accuracy_score(labels, pred))
 from sklearn.metrics import confusion_matrix
 result=confusion_matrix(pred,labels)
 
-"""output"""
+"""output
 classes = { 1:'Speed limit (20km/h)',
             2:'Speed limit (30km/h)', 
             3:'Speed limit (50km/h)', 
@@ -165,7 +166,7 @@ classes = { 1:'Speed limit (20km/h)',
             42:'End of no passing', 
             43:'End no passing veh > 3.5 tons' }
 
-last_path=os.path.join('/Users/karanrochlani/Desktop/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Train/26/00026_00011_00029.png')
+last_path=os.path.join(curr_path,'/Traffic-Sign-Classification/untitled folder 2/traffic sign recognition/Train/26/00026_00011_00029.png')
 image = Image.open(last_path)
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
@@ -173,5 +174,5 @@ image = np.array(image)
 ans = classifier.predict_classes([image])[0]
 result = classes[ans+1]
 print(result)
-
-
+"""
+classifier.save('traffic_classifier_sign.h5')
