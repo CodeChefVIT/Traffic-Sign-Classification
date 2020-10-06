@@ -34,8 +34,11 @@
 ```
 $ git clone https://github.com/CodeChefVIT/Traffic-Sign-Classification
 $ cd Traffic-Sign-Classification
-$ pip3 install -r requirements.txt
-$ python3 manage.py runserver
+You can step through the spyder at traffic_sign_classification 2.py.
+If you want to run the model training , in a stand-alone script, run traffic_sign_classification.py.
+
+If you want to run the ui for the traffic sign classifier run tkinter.py.
+
 ```
 
 ## Contributors
